@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+				<title>Алгоритмы на графах</title>
+				<link rel="stylesheet" href="../../../../css/style.css"
+</head>
+<body>
+			  <nav>
+							<ul class="menu-main">
+			<li><a href="../../../../index.html">Главная</a></li>
+		  <li><a  href="../../../learning/learning_page0.html">Изучение</a></li>
+								</ul>
+				</nav>
+			  <section class="sec3"></section>
+				<div class="sec-text">
+												
+								<h3 class="sec-text_title">Алгоритм поиска в ширину</h3>
+								       <p class="sec-text_dsc">
+																Данный алгоритм подразумевает последовательное посещение (обработка) вершин графа в определённом порядке. Одним из двух часто использующихся способов обхода является обход в ширину, или BFS (англ. breadth-first search, поиск в ширину). Его иногда также называют волновым, по аналогии с распространяющейся волной.
+												</p>
+												<p class="sec-text_dsc">
+																Суть BFS достаточно проста. Обход начинается с посещения определённой вершины (для обхода всего графа часто выбирается произвольная вершина). Затем алгоритм посещает соседей этой вершины. За ними - соседей, и так далее.
+												</p>
+												<img src="https://brestprog.by/topics/bfs/Animated_BFS.gif" alt="">
+												<p class="sec-text_dsc">
+																Как можно увидеть из иллюстрации, сам алгоритм достаточно тривиален. Поддерживается очередь из вершин для посещения. При посещении очередной вершины в очередь добавляются все её соседи, которые ещё не были посещены и ещё не находятся в очереди. Для проверки, была ли вершина уже посещена, используется массив меток. Изначально visited[i]=false  для всех i кроме начальной вершины. При добавлении вершины i в очередь visited[i] присваивается true.
+												</p>
+												<p class="sec-text_dsc">
+																
+												</p>
+												<p class="sec-text_dsc">
+																
+												</p>
+												<p class="sec-text_dsc">
+																
+												</p>
+												<p class="sec-text_dsc">
+																
+												</p>
+												<p class="sec-text_dsc">
+																
+												</p>
+												<p class="sec-text_dsc">
+																Выберите другую тему для изучения:
+												</p>
+												</p>
+					
+												<a class="button" href="DPS.html">
+																Поиск в глубину
+												</a>
+												<br>
+												<a class="button" href="algotitm_Deykcstry.html">
+															  Алгоритм Дейкстры
+												</a>
+												<br>
+												<a class="button" href="alg_Floyda_Uorshela.html">
+															  Алгоритм Флойда-Уоршелла
+												</a>
+				</div>
+			                	
+</body>
+</html>

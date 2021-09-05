@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+				<title>Алгоритмы на графах</title>
+				<link rel="stylesheet" href="../../../../css/style.css"
+</head>
+<body>
+			  <nav>
+							<ul class="menu-main">
+			<li><a href="../../../../index.html">Главная</a></li>
+		  <li><a  href="../../../learning/learning_page0.html">Изучение</a></li>
+								</ul>
+				</nav>
+			  <section class="sec3"></section>
+				<div class="sec-text">
+								<h3 class="sec-text_title">Алгоритм поиска в глубину</h3>
+								<p class="sec-text_dsc">
+												Рассмотрим алгоритм поиска в глубину в графе (depth-first search). Поиск в глубину - один из методов обхода графа. Алгоритм поиска описывается следующим образом: для каждой не пройденной вершины необходимо найти все не пройденные смежные вершины и повторить поиск для них.
+								</p>
+								
+								<p class="sec-text_dsc">
+											Рассмотрим следующий граф:
+								</p>
+								<img src="https://hsto.org/r/w780/webt/-d/dk/wt/-ddkwtwgddcvzo4mbrpzeiaklm8.png" alt="">
+								<p class="sec-text_dsc">
+												Мы находимся в точке «s» и нам нужно найти вершину «t». Применяя DFS, мы исследуем один из возможных путей, двигаемся по нему до конца и, если не обнаружили t, возвращаемся и исследуем другой путь. Вот как выглядит процесс:
+								</p>
+								<img src="https://hsto.org/r/w780/webt/gd/v-/-1/gdv--18wxok-yjflx_zjlwktysi.png" alt="">
+								<p class="sec-text_dsc">
+												Здесь мы двигаемся по пути (p1) к ближайшей вершине и видим, что это не конец пути. Поэтому мы переходим к следующей вершине.
+								</p>
+								<img src="https://hsto.org/r/w780/webt/6q/ia/h-/6qiah-iw-qpybs2fdw072vuvrna.png" alt="">
+								<p class="sec-text_dsc">
+												Мы достигли конца p1, но не нашли t, поэтому возвращаемся в s и двигаемся по второму пути.
+								</p>
+								<img src="https://hsto.org/r/w780/webt/ck/ui/ad/ckuiadguztc8gx3r6gigroyum_a.png" alt="">
+								<p class="sec-text_dsc">
+												Достигнув ближайшей к точке «s» вершины пути «p2» мы видим три возможных направления для дальнейшего движения. Поскольку вершину, венчающую первое направление, мы уже посещали, то двигаемся по второму.
+
+								</p>
+								<img src="https://hsto.org/r/w780/webt/1h/yz/7o/1hyz7ojpnp__g0w9sg5kr9bzeyk.png" alt="">
+								<p class="sec-text_dsc">
+												Мы вновь достигли конца пути, но не нашли t, поэтому возвращаемся назад. Следуем по третьему пути и, наконец, достигаем искомой вершины «t».
+								</p>
+								<img src="https://hsto.org/r/w780/webt/oy/4d/mm/oy4dmm-velx-yladbqyvyqrbkts.png" alt="">
+								<p class="sec-text_dsc">
+												
+								</p>
+								<img src="" alt="">
+								<p class="sec-text_dsc">
+												
+								</p>
+								
+												<p class="sec-text_dsc">
+														   Выберите другую тему для изучения:
+												</p>
+												</p>
+												<a class="button" href="BFS.html">
+																Поиск в ширину
+												</a>
+												<br>
+												<a class="button" href="algotitm_Deykcstry.html">
+															  Алгоритм Дейкстры
+												</a>
+												<br>
+												<a class="button" href="alg_Floyda_Uorshela.html">
+															  Алгоритм Флойда-Уоршелла
+												</a>
+				</div>
+			                	
+</body>
+</html>
